@@ -4,7 +4,7 @@ version: 0.2
 phases:
   install:
       pre_build:
-        java: corretto8
+        java: openjdk8
     commands:
       - echo Logging in to Amazon ECR...
       - aws --version
