@@ -2,7 +2,9 @@ version: 0.2
 
 
 phases:
-  pre_build:
+  install:
+      pre_build:
+        java: corretto8
     commands:
       - echo Logging in to Amazon ECR...
       - aws --version
